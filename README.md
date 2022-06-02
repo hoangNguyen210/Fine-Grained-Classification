@@ -1,6 +1,6 @@
-* [Introduction](#3d-ucaps-3d-capsules-unet-for-volumetric-image-segmentation)
+* [Introduction](#intro)
 * [Usage](#usage)
-* [Model Zoo](#model-zoo)
+* [Model](#model)
 
 # Fine Grained Classification using Mixture of Pretrained model
 
@@ -37,8 +37,8 @@ fgvc-aircraft-2013b/
 We also use the given `train.csv`, `test.csv`, `val.csv`  to extract index and label for the train, test, validation dataset.
 
 
-## Model Zoo
-**About the code** This repository has been refactored to use Pytorch Lightning framework and MONAI library for data preprocessing, data loading, inferencing to ensure the reproducibility and extendability of our work as well as improve efficiency when training. Hence, the results here have been improved a little bit when compared to their counterparts in the paper.
+## Proposed method
+**About the code** Our work has been utilized some pretrained model on keras framework as well as for data augmentation technique. 
 
 
 ### Result of our proposed method on FGVC-Aircraft dataset:
@@ -49,5 +49,11 @@ We also use the given `train.csv`, `test.csv`, `val.csv`  to extract index and l
 | Inception-V3         | 77.92     |[download](https://drive.google.com/file/d/11nOzMyxTGqpd0UI5urrOxP-KOraeBKbA/view?usp=sharing) |
 | InceptionResNet-V2   | 79.54     |[download](https://drive.google.com/file/d/1RwWDYB2QpmokAv8w9vngOcHrTVMCo_kX/view?usp=sharing) |
 | MoPT                 | 81.58     |[download](https://drive.google.com/file/d/1-3lbojBiohMjYWPdnkutl8mnWtYvi-0d/view?usp=sharing) |
-## Acknowledgement
-The implementation of dynamic routing algorithm and capsule layers were based on the Tensorflow build of CapsNet by its authors in this [link](https://github.com/Sarasra/models/tree/master/research/capsules)
+
+
+### Contact
+Thanks for your attention!
+If you have any suggestion or question, you can leave a message here or contact us directly:
+- hoangng210a@gmail.com
+
+
