@@ -16,41 +16,21 @@ Details of the UCaps model architecture and experimental results can be found in
 ## Usage
 
 ### Installation
-We provide instructions on how to install dependencies via conda. First, clone the repository locally:
+Install dependencies : 
 ```
-git clone https://github.com/VinAIResearch/3D-UCaps.git
-```
-
-Then, install dependencies depends on your cuda version. We provide two versions for CUDA 10 and CUDA 11
-```
-conda env create -f environment_cuda11.yml
-or
-conda env create -f environment_cuda10.yml
+pip install requirements.txt
 ```
 
 ### Data preparation
-Download and extract these datasets:
-* iSeg-2017 challenge (infant brain MRI segmentation): <https://iseg2017.web.unc.edu/download/>
-* Lung Nodule Analysis 2016 (LUNA16): <https://luna16.grand-challenge.org/Download/>
-* Cardiac and Hippocampus dataset from Medical Segmentation Decathlon: <http://medicaldecathlon.com/>
+Download datasets:
+* FGVC-Aircraft dataset: <https://www.kaggle.com/datasets/seryouxblaster764/fgvc-aircraft?select=fgvc-aircraft-2013b>
 
 We expect the directory structure to be the following:
 ```
-path/to/iseg/
-  domainA/
-  domainA_val/
-
-path/to/cardiac/
-  imagesTr
-  labelsTr
-
-path/to/hippocampus/
-  imagesTr
-  labelsTr
-
-path/to/luna/
-  imgs
-  segs
+fgvc-aircraft-2013b/
+  dfgvc-aircraft-2013b/
+    data/ 
+      images/
 ```
 
 **Note**: there are some files in LUNA16 dataset can lead to an error when training so we have removed it:
