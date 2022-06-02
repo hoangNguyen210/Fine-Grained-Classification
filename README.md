@@ -12,16 +12,7 @@
 ![alt text](imgs/model.png "UCaps architecture")
 
 Details of the UCaps model architecture and experimental results can be found in our [following paper](https://rdcu.be/cyhMv):
-```
-@inproceedings{nguyen20213d,
-  title={3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation},
-  author={Nguyen, Tan and Hua, Binh-Son and Le, Ngan},
-  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
-  pages={548--558},
-  year={2021},
-  organization={Springer}
-}
-```
+
 
 **Please CITE** our paper when UCaps is used to help produce published results or incorporated into other software
 
@@ -139,34 +130,14 @@ python val.py --gpu 1 --sw_batch_size 32 --overlap 0.75 --output_dir=/home/ubunt
 ## Model Zoo
 **About the code** This repository has been refactored to use Pytorch Lightning framework and MONAI library for data preprocessing, data loading, inferencing to ensure the reproducibility and extendability of our work as well as improve efficiency when training. Hence, the results here have been improved a little bit when compared to their counterparts in the paper.
 
-### Dice Coefficient on subject 9th of iSeg-2017 dataset:
 
-| Model | CSF | GM | WM | Average | Pretrained model |
-|-------|:---:|:---:|:---:|:-----:|------------------|
-| 3D-UCaps | **95.01** | **91.51** | 90.59 | **92.37** | [download](https://drive.google.com/file/d/15VZ_Zw_0hxknK3xEbkAr8hsDCDKp5nKi/view?usp=sharing) |
-| Paper | 94.21 | 91.34 | **90.95** | 92.17 | |
+### Result of our proposed method on FGVC-Aircraft dataset:
 
-### Dice Coefficient of 3D-UCaps on hippocampus dataset in 4-folds cross-validation:
-
-|       | Anterior | Posterior | Average | Pretrained model |
-|-------|:--------:|:---------:|:-------:|------------------|
-| Fold 0 | 86.33 | 83.79 | 85.06 | [download](https://drive.google.com/file/d/1Txl1HqWryjFAyb72QsLFuE5bOr71DI1Z/view?usp=sharing) |
-| Fold 1 | 86.57 | 84.51 | 85.54 | [download](https://drive.google.com/file/d/1j6TURqRq79YAeiz2Z58_rNg46tG1e_U6/view?usp=sharing) |
-| Fold 2 | 84.29 | 83.23 | 83.76 | [download](https://drive.google.com/file/d/1XYkAM-7_YY1jAgOlfcSefOwRmm7cMGLG/view?usp=sharing) |
-| Fold 3 | 85.71 | 83.53 | 84.62 | [download](https://drive.google.com/file/d/1mjMsMUltTikw8HW2IwRqG5s9pEsmwKVo/view?usp=sharing) |
-| **Mean** | **85.73** | **83.77** | **84.75** |        |
-| Paper | 85.07 | 82.49 | 83.78 | |
-
-### Result of 3D-UCaps on the cardiac dataset in 4-folds cross-validation:
-
-|       | Recall | Precision | Dice | Pretrained model |
-|-------|:------:|:---------:|:----:|------------------|
-| Fold 0 | 91.38 | 89.66 | 90.51 | [download](https://drive.google.com/file/d/1vSbXITn_vh6RXzXf1whhihzPQRrj6CcA/view?usp=sharing) |
-| Fold 1 | 89.68 | 95.10 | 91.76 | [download](https://drive.google.com/file/d/1SjSAhjjpW983E0HUKnXfJrPlSeBXLH5Q/view?usp=sharing) |
-| Fold 2 | 93.12 | 93.00 | 92.53 | [download](https://drive.google.com/file/d/1wYlQtwcoi94Yx3V48ctBXLK3Mgww8XMA/view?usp=sharing) |
-| Fold 3 | 91.55 | 94.84 | 90.89 | [download](https://drive.google.com/file/d/1cB3Qf7XcdmBaiYeBgmp7f0_LhVX0YvBe/view?usp=sharing) |
-| **Mean** | 91.43 | **93.15** | **91.42** |        |
-| Paper | **92.69** | 89.45 | 90.82 | |
-
+| Model                |  Accuracy | Pretrained model |
+|-------|:------:|:---------:|
+| ResNet-50            | 68.92     |[download](https://drive.google.com/file/d/1-4keaQBactTvOFCeoDJyRUdfXmsBk6VN/view?usp=sharing) |
+| Inception-V3         | 77.92     |[download](https://drive.google.com/file/d/11nOzMyxTGqpd0UI5urrOxP-KOraeBKbA/view?usp=sharing) |
+| InceptionResNet-V2   | 79.54     |[download](https://drive.google.com/file/d/1RwWDYB2QpmokAv8w9vngOcHrTVMCo_kX/view?usp=sharing) |
+| MoPT                 | 81.58     |[download](https://drive.google.com/file/d/1-3lbojBiohMjYWPdnkutl8mnWtYvi-0d/view?usp=sharing) |
 ## Acknowledgement
 The implementation of dynamic routing algorithm and capsule layers were based on the Tensorflow build of CapsNet by its authors in this [link](https://github.com/Sarasra/models/tree/master/research/capsules)
