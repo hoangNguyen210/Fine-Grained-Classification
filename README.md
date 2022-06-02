@@ -25,13 +25,16 @@ pip install requirements.txt
 Download datasets:
 * FGVC-Aircraft dataset: <https://www.kaggle.com/datasets/seryouxblaster764/fgvc-aircraft?select=fgvc-aircraft-2013b>
 
-We expect the directory structure to be the following:
+We expect the images in the following path:
 ```
 fgvc-aircraft-2013b/
-  dfgvc-aircraft-2013b/
+  fgvc-aircraft-2013b/
     data/ 
-      images/
+      images/ 
+        0034309.jpg
+        0034958.jpg
 ```
+We also use the given '''test.csv''', '''train.csv''' to extract index and label for the given dataset.
 
 **Note**: there are some files in LUNA16 dataset can lead to an error when training so we have removed it:
 ```
