@@ -34,13 +34,8 @@ fgvc-aircraft-2013b/
         0034309.jpg
         0034958.jpg
 ```
-We also use the given '''test.csv''', '''train.csv''' to extract index and label for the given dataset.
+We also use the given 'train.csv', 'test.csv', 'val.csv'  to extract index and label for the train, test, validation dataset.
 
-**Note**: there are some files in LUNA16 dataset can lead to an error when training so we have removed it:
-```
-1.3.6.1.4.1.14519.5.2.1.6279.6001.771741891125176943862272696845.mhd
-1.3.6.1.4.1.14519.5.2.1.6279.6001.927394449308471452920270961822.mhd
-```
 
 ### Training
 
