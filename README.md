@@ -1,11 +1,8 @@
-# Fine-Grained-Classification
-
-
 * [Introduction](#3d-ucaps-3d-capsules-unet-for-volumetric-image-segmentation)
 * [Usage](#usage)
 * [Model Zoo](#model-zoo)
 
-# 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation
+# Fine Grained Classification using Mixture of Pretrained model
 
 3D-UCaps is a voxel-based Capsule network for medical image segmentation. Our architecture is based on the symmetry U-net with two parts: the encoder forms by Capsule layers, whereas the decoder contains traditional convolutional layers. 3D-UCaps, therefore inherits the merits from both Capsule networks to preserve the part-to-whole relationship and CNNs to learn translational invariant representation. We conducted experiments on various datasets (including iSeg-2017, LUNA16, Hippocampus, and Cardiac) to demonstrate the superior performance of 3D-UCaps, where our method outperforms the baseline method [SegCaps](https://github.com/lalonderodney/SegCaps) while being more robust against rotational transformation when compared to 3D-Unet.
 
