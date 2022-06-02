@@ -1,10 +1,15 @@
 * [Introduction](#intro)
 * [Usage](#usage)
-* [Model](#model)
+* [Conclusion](#conclusion)
+* [Contact](#contact)
 
-# Fine Grained Classification using Mixture of Pretrained model
+# MoPT: Fine Grained Classification using Mixture of Pretrained model
 
-3D-UCaps is a voxel-based Capsule network for medical image segmentation. Our architecture is based on the symmetry U-net with two parts: the encoder forms by Capsule layers, whereas the decoder contains traditional convolutional layers. 3D-UCaps, therefore inherits the merits from both Capsule networks to preserve the part-to-whole relationship and CNNs to learn translational invariant representation. We conducted experiments on various datasets (including iSeg-2017, LUNA16, Hippocampus, and Cardiac) to demonstrate the superior performance of 3D-UCaps, where our method outperforms the baseline method [SegCaps](https://github.com/lalonderodney/SegCaps) while being more robust against rotational transformation when compared to 3D-Unet.
+
+## Introduction 
+
+Mixture of Experts is an ensemble method combining weak learners to form a strong learner, hence improving the performance of our models. The crucial component of Mixture of experts is Gating Network, this element will select which experts to use depending on their influences. In this work, we will use Mixture of Experts model to combine each pretrained and form a comprehensive classification system. 
+
 
 ![alt text](MoPT.png "Mixture of Pretrained model")
 
@@ -12,6 +17,10 @@ Details of the UCaps model architecture and experimental results can be found in
 
 
 **Please CITE** our paper when UCaps is used to help produce published results or incorporated into other software
+
+
+
+
 
 ## Usage
 
