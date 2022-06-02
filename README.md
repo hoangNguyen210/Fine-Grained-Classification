@@ -47,17 +47,16 @@ We also use the given `train.csv`, `test.csv`, `val.csv`  to extract index and l
 
 
 ## Proposed method
-**About the code** Our work has been utilized some pretrained model on keras framework as well as for data augmentation technique. 
-
+**About the code** Our work has been utilized some pretrained model on keras framework as well as for data augmentation technique. To access the code, click to Code column in the table below. 
 
 ### Result of our proposed method on FGVC-Aircraft dataset:
 
-| Model                |  Accuracy | Pretrained model |
-|-------|:------:|:---------:|
-| ResNet-50            | 68.92     |[download](https://drive.google.com/file/d/1-4keaQBactTvOFCeoDJyRUdfXmsBk6VN/view?usp=sharing) |
-| Inception-V3         | 77.92     |[download](https://drive.google.com/file/d/11nOzMyxTGqpd0UI5urrOxP-KOraeBKbA/view?usp=sharing) |
-| InceptionResNet-V2   | 79.54     |[download](https://drive.google.com/file/d/1RwWDYB2QpmokAv8w9vngOcHrTVMCo_kX/view?usp=sharing) |
-| MoPT                 | 81.58     |[download](https://drive.google.com/file/d/1-3lbojBiohMjYWPdnkutl8mnWtYvi-0d/view?usp=sharing) |
+| Model                |  Accuracy | Code     |Pretrained model |
+|-------|:------:|:---------:|:---------:|
+| ResNet-50            | 68.92 |    [ResNet50.ipynb](https://github.com/hoangNguyen210/Fine-Grained-Classification/blob/main/code/ResNet50.ipynb)          |[download](https://drive.google.com/file/d/1-4keaQBactTvOFCeoDJyRUdfXmsBk6VN/view?usp=sharing) |
+| Inception-V3         | 77.92 |    [Inception_V3.ipynb](https://github.com/hoangNguyen210/Fine-Grained-Classification/blob/main/code/Inception_V3.ipynb)         |[download](https://drive.google.com/file/d/11nOzMyxTGqpd0UI5urrOxP-KOraeBKbA/view?usp=sharing) |
+| InceptionResNet-V2   | 79.54 |    [InceptionResNet_V2.ipynb](https://github.com/hoangNguyen210/Fine-Grained-Classification/blob/main/code/InceptionResNet_V2.ipynb)         |[download](https://drive.google.com/file/d/1RwWDYB2QpmokAv8w9vngOcHrTVMCo_kX/view?usp=sharing) |
+| MoPT                 | 81.58 |     [MoPT.ipynb](https://github.com/hoangNguyen210/Fine-Grained-Classification/blob/main/code/MoPT.ipynb)           |[download](https://drive.google.com/file/d/1-3lbojBiohMjYWPdnkutl8mnWtYvi-0d/view?usp=sharing) |
 
 
 ### Contact
